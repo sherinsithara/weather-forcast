@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast Pro </title>
+    <link rel="Icon" href="https://image.shutterstock.com/image-vector/mail-icon-260nw-523869661.jpg">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #405D72;
+            color: white;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: fadeIn 2s;
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+
+        nav {
+            margin-right: 2em;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1em;            
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #F7E7DC;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        #contact {
+            text-align: center;
+            margin-top: 2em;
+            animation: fadeIn 2s;
+        }
+
+        #contact h2 {
+            margin-bottom: 1em;
+        }
+
+        #contact form {
+            display: inline-block;
+            text-align: left;
+            background-color: #f9f9f9;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s;
+        }
+
+        #contact form label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+
+        #contact form input,
+        #contact form textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s;
+        }
+
+        #contact form input:focus,
+        #contact form textarea:focus {
+            border-color: #007BFF;
+        }
+
+        #contact form button {
+            display: block;
+            width: 100%;
+            padding: 0.5em;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #contact form button:hover {
+            background-color: #0056b3;
+        }
+
+        #contact img {
+            width: 100%;
+            height: auto;
+            margin-top: 2em;
+            border-radius: 10px;
+            animation: zoomIn 1s;
+        }
+
+        footer {
+            background-color: #405D72;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            animation: fadeIn 2s;
+        }
+
+        footer p {
+            margin: 0.5em 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer img {
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Weather Forecast. All rights reserved.</p>
+        <p>
+            <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="Email Icon">
+            <img src="https://img.icons8.com/?size=48&id=118497&format=png" alt="">
+            <img src="https://img.icons8.com/?size=48&id=32323&format=png" alt="">
+            <img src="https://img.icons8.com/?size=48&id=63807&format=png" alt="">
+        </p>
+    </footer>
+</body>
+</html>

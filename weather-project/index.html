@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forecast Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="weather-input">
+            <h3>Enter a City Name</h3>
+            <input class="city-input" type="text" placeholder="E.g., Dindgul, Chennai">
+            <button class="search-btn">Search</button>
+            <div class="separator"></div>
+            <button class="location-btn">Use Current Location</button>
+        </div>
+        <div class="weather-data">
+            <div class="current-weather">
+                <div class="details">
+                    <h2>Chennai</h2>
+                    <img class="sun" src="https://img.icons8.com/?size=80&id=111603&format=png" alt="">
+                    <h6>Temperature: 34°C</h6>
+                    <h6>Wind: 15 M/S</h6>
+                    <h6>Humidity: 70%</h6>
+                </div>
+            </div>
+            <section id="popular-cities">
+                <div class="section-header">
+                    <div class="header-content">
+                        <h2>Popular Cities</h2>
+                    </div>
+                </div>
+                <div class="city-card">
+                    <img src="dgl.jpg" alt="Dindigul">
+                    <h3>Dindigul</h3>
+                    <p>Temperature: 32°C</p>
+                    <p>Wind: 10 M/S</p>
+                    <p>Humidity: 60%</p>
+                </div>
+                <div class="city-card">
+                    <img src="chennai.jpg" alt="Chennai">
+                    <h3>Chennai</h3>
+                    <p>Temperature: 34°C</p>
+                    <p>Wind: 15 M/S</p>
+                    <p>Humidity: 70%</p>
+                </div>
+                <div class="city-card">
+                    <img src="coimb.jpg" alt="Coimbatore">
+                    <h3>Coimbatore</h3>
+                    <p>Temperature: 30°C</p>
+                    <p>Wind: 8 M/S</p>
+                    <p>Humidity: 65%</p>
+                </div>
+            </section>
+            <div class="days-forecast">
+                <h2>5-Day Forecast</h2>
+                <ul class="weather-cards">
+                    <li class="card">
+                        <h3>Monday</h3>
+                        <h6>Temp: 33°C</h6>
+                        <h6>Wind: 12 M/S</h6>
+                        <h6>Humidity: 68%</h6>
+                    </li>
+                    <li class="card">
+                        <h3>Tuesday</h3>
+                        <h6>Temp: 34°C</h6>
+                        <h6>Wind: 13 M/S</h6>
+                        <h6>Humidity: 70%</h6>
+                    </li>
+                    <li class="card">
+                        <h3>Wednesday</h3>
+                        <h6>Temp: 32°C</h6>
+                        <h6>Wind: 10 M/S</h6>
+                        <h6>Humidity: 65%</h6>
+                    </li>
+                    <li class="card">
+                        <h3>Thursday</h3>
+                        <h6>Temp: 35°C</h6>
+                        <h6>Wind: 14 M/S</h6>
+                        <h6>Humidity: 72%</h6>
+                    </li>
+                    <li class="card">
+                        <h3>Friday</h3>
+                        <h6>Temp: 33°C</h6>
+                        <h6>Wind: 11 M/S</h6>
+                        <h6>Humidity: 67%</h6>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

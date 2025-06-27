@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast Pro</title>
+    <link rel="Icon" href="https://img.icons8.com/?size=50&id=11256&format=png">
+    <style>
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #F0F4F8;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:#758694;
+            color: white;
+            padding: 1em;
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        nav {
+            margin-right: 2em;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #F7E7DC;
+        }
+
+        nav a.current {
+            text-decoration: underline;
+            color: #F7E7DC;
+            font-weight: bold;
+        }
+
+        main {
+            display: flex;
+            padding: 2em;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #405D72;
+            color: white;
+            padding: 1em;
+            border-radius: 10px;
+            margin-right: 1em;
+        }
+
+        .sidebar h2 {
+            color: #F7E7DC;
+        }
+
+        .sidebar p {
+            color: white;
+        }
+
+        .content {
+            flex: 3;
+            padding: 1em;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #services {
+            text-align: center;
+            margin-top: 2em;
+            animation: fadeIn 2s;
+        }
+
+        #services h2 {
+            margin-bottom: 1em;
+        }
+
+        .service-card {
+            display: inline-block;
+            width: 30%;
+            padding: 1em;
+            margin: 1em;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 1em;
+            border-radius: 50%;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #405D72;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        footer img {
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Services</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <aside class="sidebar">
+            <h2>About Us</h2>
+            <p>Forecast Pro provides accurate and reliable weather forecasts for cities around the world. Our services help you plan your day and stay safe during severe weather conditions.</p>
+            <h2>Contact Info</h2>
+            <p>Email: contact@forecastpro.com</p>
+            <p>Phone: 98123794844</p>
+            <h2>Follow Us</h2>
+            <p>Stay connected with us on social media for the latest updates.</p>
+            <p>
+                <img src="https://img.icons8.com/fluency/48/facebook-new.png" alt="Facebook Icon">
+                <img src="https://img.icons8.com/fluency/48/twitter.png" alt="Twitter Icon">
+                <img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram Icon">
+            </p>
+        </aside>
+        <section class="content" id="services">
+            <h2>Our Services</h2>
+            <div class="service-card">
+                <img src="daily.jpg" alt="Daily Forecasts">
+                <h3>Daily Forecasts</h3>
+                <p>Stay updated with the daily weather conditions in your city.</p>
+            </div>
+            <div class="service-card">
+                <img src="ale.jpg" alt="Severe Weather Alerts">
+                <h3>Severe Weather Alerts</h3>
+                <p>Receive timely alerts about severe weather conditions to stay safe.</p>
+            </div>
+            <div class="service-card">
+                <img src="week.jpg" alt="Weekly Forecasts">
+                <h3>Weekly Forecasts</h3>
+                <p>Plan your week ahead with our accurate weekly weather forecasts.</p>
+            </div>
+            <div class="service-card">
+                <img src="mon.jpg" alt="Monthly Forecasts">
+                <h3>Monthly Forecasts</h3>
+                <p>Get insights on the weather patterns for the month.</p>
+            </div>
+            <div class="service-card">
+                <img src="rad.jpg" alt="Weather Radar">
+                <h3>Weather Radar</h3>
+                <p>Track weather systems with our advanced weather radar.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Forecast Pro. All rights reserved.</p>
+        <p>
+            <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="Email Icon">
+            <img src="https://img.icons8.com/?size=48&id=118497&format=png" alt="">
+            <img src="https://img.icons8.com/?size=48&id=32323&format=png" alt="">
+            <img src="https://img.icons8.com/?size=48&id=63807&format=png" alt="">
+        </p>
+    </footer>
+</body>
+</html>
